@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Gallery from './components/Gallery';
 import './App.css';
 
 function App() {
+	const items = [
+		"https://placeimg.com/640/480/people",
+		"https://placeimg.com/640/480/arch",
+		"https://placeimg.com/640/480/tech",
+		"https://placeimg.com/640/480/nature",
+	];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    	<Gallery items={items} />	
+		</div>
   );
 }
 
